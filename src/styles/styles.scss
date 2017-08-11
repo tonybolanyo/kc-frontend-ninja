@@ -1,3 +1,8 @@
-body {
-    background-color: lightgray;
-}
+@import "components/reset";
+@import "../../node_modules/normalize.css/normalize";
+@import "components/elements";
+
+@import "variables";
+@import "components/responsive";
+
+@import "components/grid";

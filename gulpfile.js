@@ -42,7 +42,7 @@ gulp.task("html", function(){
 
 // compile css styles from sass files
 gulp.task("sass", function(){
-    gulp.src("src/styles/styles.scss")
+    gulp.src("src/styles/*.scss")
         // compile sass
         .pipe(sass().on("error", sass.logError))
         // copy to dist folder

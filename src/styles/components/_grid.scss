@@ -1,0 +1,71 @@
+@mixin flex-item {
+    &.full > .grid-item {
+        flex: 0 0 100%;
+    }
+
+    &.halfs > .grid-item, & > .grid-item.half {
+        flex: 0 0 50%;
+    }
+
+    &.md-halfs > .grid-item, & > .grid-item.md-half {
+        flex: 0 0 100%;
+        @include screen-md {
+            flex: 0 0 50%
+        }
+    }
+
+    &.thirds > .grid-item, & > .grid-item.third {
+        flex: 0 0 calc(100% / 3);
+    }
+
+    &.md-thirds > .grid-item, & > .grid-item.md-third {
+        flex: 0 0 100%;
+        @include screen-md {
+            flex: 0 0 calc(100% / 3);
+        }
+    }
+
+    &.quarters > .grid-item, & > .grid-item.quarter {
+        flex: 0 0 25%;
+    }
+
+    &.md-quarters > .grid-item, & > .grid-item.md-quarter {
+        flex: 0 0 100%;
+        @include screen-md {
+            flex: 0 0 25%;
+        }
+    }
+
+    &.no-gutters {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+.container {
+    max-width: 50rem;
+    margin: 0 auto;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -.5rem;
+    margin-right: -.5rem;
+    @include flex-item;
+}
+
+.grid-item {
+    flex: 1;
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+
+.grid.sm-full {
+    & > .grid-item {
+        flex: 0 0 100%;
+    }
+    @include screen-md {
+        @include flex-item;
+    }
+}
