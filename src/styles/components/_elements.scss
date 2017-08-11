@@ -1,3 +1,44 @@
 * {
     box-sizing: border-box;
 }
+
+*, html, body {
+    font-family: $text-font;
+    color: $text-color;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $title-font;
+    color: $title-color;
+    line-height: 110%;
+}
+
+h1 {
+    font-size: $h1-fontsize;
+    margin: ($h1-fontsize / 2) 0 ($h1-fontsize / 2.5) 0;
+}
+
+h2 {
+    font-size: $h2-fontsize;
+    margin: ($h2-fontsize / 2) 0 ($h2-fontsize / 2.5) 0;
+}
+
+h3 {
+    font-size: $h3-fontsize;
+    margin: ($h3-fontsize / 2) 0 ($h3-fontsize / 2.5) 0;
+}
+
+h4 {
+    font-size: $h4-fontsize;
+    margin: ($h4-fontsize / 2) 0 ($h4-fontsize / 2.5) 0;
+}
+
+h5 {
+    font-size: $h5-fontsize;
+    margin: ($h5-fontsize / 2) 0 ($h5-fontsize / 2.5) 0;
+}
+
+h6 {
+    font-size: $h6-fontsize;
+    margin: ($h6-fontsize / 2) 0 ($h6-fontsize / 2.5) 0;
+}

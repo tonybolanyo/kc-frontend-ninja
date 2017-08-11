@@ -1,3 +1,25 @@
+// typography
+
+$text-font: "Open Sans", Arial, Helvetica, sans-serif;
+$title-font: Manuale, "Times New Roman", serif;
+
+$h1-fontsize: 3.5rem !default;
+$h2-fontsize: 3rem !default;
+$h3-fontsize: 2.5rem !default;
+$h4-fontsize: 2rem !default;
+$h5-fontsize: 1.5rem !default;
+$h6-fontsize: 1rem !default;
+
+
+// colors
+
+$primary-color: #155216;
+
+$light-gray: #d0d0d0;
+
+$text-color: #555;
+$title-color: $primary-color;
+
 // Screen width for media queries breakpoints
 $medium-screen-width: 768px;
 $large-screen-width: 992px;
