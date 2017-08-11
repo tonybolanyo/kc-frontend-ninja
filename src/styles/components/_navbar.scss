@@ -1,0 +1,21 @@
+ul.navbar-nav {
+    list-style: none;
+    li {
+        display: inline-block;
+        line-height: 50px;
+        &.active {
+            background-color: $primary-color;
+            a {
+                color: $secondary-color;
+            }
+        }
+        a {
+            padding: 0 1rem;
+            display: block;
+            text-decoration: none;
+            &:hover {
+                background-color: $light-gray;
+            }
+        }
+    }
+}

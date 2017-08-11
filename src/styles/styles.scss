@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Manuale|Open+Sans');
 
 @import "components/reset";
-@import "../../node_modules/normalize.css/normalize";
+//@import "../../node_modules/normalize.css/normalize";
 
 @import "variables";
 @import "components/responsive";
@@ -9,3 +9,4 @@
 @import "components/elements";
 @import "components/grid";
 @import "components/footer";
+@import "components/navbar";
