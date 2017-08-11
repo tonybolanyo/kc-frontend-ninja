@@ -1,0 +1,22 @@
+footer {
+    background-color: darken($primary-color, 10%);
+    color: $light-gray;
+    .copyright {
+        font-size: small;
+        color: $light-gray;
+        text-align: right;
+        margin: 1rem;
+    }
+    padding-bottom: 2rem;
+}
+
+.footer-logo {
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    font-size: xx-large;
+    color: white;
+    span {
+        color: $secondary-color;
+    }
+}
