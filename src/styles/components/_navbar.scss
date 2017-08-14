@@ -1,5 +1,15 @@
-ul.navbar-nav {
+.navbar-nav > li > a {
+    font-size: 23px;
+    line-height: 50px;
+    float: right;
+    span {
+        display: none;
+    }
+}
+
+.navbar-nav {
     list-style: none;
+    text-align: right;
     li {
         display: inline-block;
         line-height: 50px;
@@ -10,7 +20,7 @@ ul.navbar-nav {
             }
         }
         a {
-            padding: 0 1rem;
+            padding: 0 .5rem;
             display: block;
             text-decoration: none;
             &:hover {
@@ -18,4 +28,8 @@ ul.navbar-nav {
             }
         }
     }
+}
+
+aside {
+    display: none;
 }

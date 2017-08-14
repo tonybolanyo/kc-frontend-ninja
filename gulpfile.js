@@ -15,7 +15,7 @@ var sourcemaps = require("gulp-sourcemaps");
 var uglify = require("gulp-uglify");
 
 // default task for development
-gulp.task("default", ["html", "js", "sass"], function(){
+gulp.task("default", ["html", "js", "sass", "fonts"], function(){
     // launch develop local server
     browserSync.init({
         server: "dist/"
@@ -26,6 +26,9 @@ gulp.task("default", ["html", "js", "sass"], function(){
 
     // watch styles folder to compile sass files
     gulp.watch(["src/styles/*.scss", "src/styles/**/*.scss"], ["sass"]);
+
+    // watch font folder
+    gulp.watch(["src/fonts/*"], ["fonts"]);
    
 });
 
@@ -50,6 +53,13 @@ gulp.task("sass", function(){
         // and reload browsers
         .pipe(browserSync.stream()); // reload CSS in open browsers
 });
+
+// copy fonts
+gulp.task("fonts", function(){
+    gulp.src("src/fonts/*")
+        .pipe(gulp.dest("dist/fonts/"))
+        .pipe(browserSync.stream());
+})
 
 // compile javascript
 gulp.task("js", function(){

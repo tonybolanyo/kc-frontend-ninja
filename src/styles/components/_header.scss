@@ -1,0 +1,23 @@
+header {
+    background-color: $header-bg-color;
+    display: flex;
+    border-bottom: solid 1px $light-gray;
+    text-align: center;
+    height: 50px;
+}
+
+.header-logo {
+    font-size: 25px;
+    color: $primary-color;
+    height: 50px;
+    flex: 100;
+    text-align: left;
+    padding-left: 1rem;
+    a {
+        text-decoration: none;
+        line-height: 50px;
+        span {
+            color: $secondary-color;
+        }
+    }
+}
